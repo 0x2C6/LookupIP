@@ -1,11 +1,23 @@
 require "test_helper"
 
-class LookupipTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Lookupip::VERSION
+class LookupIPTest < Minitest::Test
+  def setup
+    @ipv4 = LookupIP::V4.address '30.104.194.91'
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_ipv4_country
+    assert_equal 'United States', @ipv4.country
+  end
+
+  def test_ipv4_state
+    assert_equal 'Ohio', @ipv4.state
+  end
+
+  def test_ipv4_city
+    assert_equal 'Columbus', @ipv4.city
+  end
+
+  def test_ipv4_isp
+    assert_equal 'DoD Network Information Center', @ipv4.isp
   end
 end

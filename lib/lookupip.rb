@@ -1,5 +1,5 @@
 require "lookupip/version"
+require "lookupip/v4"
 
-module Lookupip
-  # Your code goes here...
+module LookupIP
 end
