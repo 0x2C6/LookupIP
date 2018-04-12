@@ -5,7 +5,7 @@ require "lookupip/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "lookupip"
-  spec.version       = Lookupip::VERSION
+  spec.version       = LookupIP::VERSION
   spec.authors       = ["Farhad"]
   spec.email         = ["farhad9801@gmail.com"]
 
