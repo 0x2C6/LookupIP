@@ -20,4 +20,8 @@ class LookupIPTest < Minitest::Test
   def test_ipv4_isp
     assert_equal 'DoD Network Information Center', @ipv4.isp
   end
+
+  def test_ipv4_country_code
+    assert_equal 'US', @ipv4.code
+  end
 end

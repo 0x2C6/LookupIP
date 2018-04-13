@@ -24,11 +24,14 @@ Or install it yourself as:
 require 'lookupip'
 
 # IPv4
+
 ip_info = LookupIP::V4.address '30.104.194.91'
+
 puts ip_info.country    #=> "United States"
 puts ip.state           #=> "Ohio"
 puts ip_info.city       #=> "Columbus"
 puts ip_info.isp        #=> "DoD Network Information Center"
+puts ip_info.code       #=> "US"
 ```
 
 
