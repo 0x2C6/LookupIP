@@ -1,5 +1,7 @@
 # Lookupip
 
+[![Gem Version](https://badge.fury.io/rb/lookupip.svg)](https://badge.fury.io/rb/lookupip)
+
 Easy way to find ip address informations.
 
 ## Installation
